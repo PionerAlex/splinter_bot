@@ -1,10 +1,25 @@
+import asyncio
 
-def get_string(string: str, number: int) -> str:
-    return string * number
+async def main():
+    print('Hello ...')
+    await asyncio.sleep(1)
+    print('... World!')
 
+asyncio.run(main())
 
-print(get_string.__annotations__)
+import asyncio
+import time
 
-print('hello')
+async def say_after(delay, what):
+    await asyncio.sleep(delay)
+    print(what)
 
+async def main():
+    print(f"started at {time.strftime('%X')}")
 
+    await say_after(1, 'hello')
+    await say_after(2, 'world')
+
+    print(f"finished at {time.strftime('%X')}")
+
+asyncio.run(main())
