@@ -3,7 +3,7 @@ import time
 
 
 API_URL = 'https://api.telegram.org/bot'
-BOT_TOKEN = '8498497353:AAG9Sa4M_bjNDyqcIS5IEChkP31NUvrnbX4'
+BOT_TOKEN = 'bottoken'
 API_CATS_URL = 'https://api.thecatapi.com/v1/images/search'
 API_DOG_URL = 'https://random.dog/woof.json'
 API_FOX_URL = 'https://randomfox.ca/floof/'
